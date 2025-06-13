@@ -1,0 +1,11 @@
+serviceName: "TeacherService"
+webappDirectory: "src/main/webapp"
+gatewayUrl: "http://localhost:8080"
+annotationClass: "org.appops.teacherapp.core.TeacherService"
+executionMode: "SERVICE"
+webConfig:
+  ip: "http://localhost"
+  port: "8033"
+  contextPath: "/TeacherService"
+containerConfig:
+  dockerFileOrBaseDirectory: "Dockerfile"

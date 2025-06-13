@@ -1,0 +1,3 @@
+annotationClass: org.appops.br.user.service.core.UserService
+modules:
+  - "org.appops.br.user.service.UserServiceSlimModule"

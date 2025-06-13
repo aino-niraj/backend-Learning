@@ -1,0 +1,33 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.appops</groupId>
+    <artifactId>appops-br-reactor</artifactId>
+    <version>zc-blogger-2</version>
+  </parent>
+
+  <artifactId>teacher-app-slim</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>teacher-app-slim</name>
+ <dependencies>
+    <dependency>	
+      <groupId>org.reflections</groupId>
+      <artifactId>reflections</artifactId>
+      <version>zc-blogger-2</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.appops</groupId>
+    	<artifactId>appops-br-core</artifactId>
+    	<version>zc-blogger-2</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.appops</groupId>
+    	<artifactId>appops-br-slim-base</artifactId>
+    	<version>zc-blogger-2</version>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,22 @@
+annotationClass: org.appops.teacherapp.core.TeacherService
+modules:
+    - org.appops.logging.guice.DefaultLoggerModule
+    - org.appops.teacherapp.injector.TeacherImplModule
+    - org.appops.entitystore.injection.EntityStoreModule
+config: 
+    org.appops.entitystore.hibernate.configuration.SchemaConfig: 
+      commonConfig:
+        hibernate.connection.url: jdbc:mysql://localhost:3306/
+        hibernate.connection.username: root
+        hibernate.connection.password: mysql#htznr
+        hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        hibernate.connection.driver_class: com.mysql.cj.jdbc.Driver
+        hibernate.connection.autoReconnect: 'true'
+    org.appops.logging.logger.config.LoggerConfig:
+      destinationLogger: JUL
+      aggregateLogs: false
+      level: ALL
+    org.appops.entity.meta.core.SchemaExporterConfig:
+      url: jdbc:mysql://localhost:3306/
+      user: root
+      password: mysql#htznr
